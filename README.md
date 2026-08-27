@@ -20,8 +20,11 @@ LLM 멀티에이전트 오케스트레이션 · 검증 게이트 설계 · 이�
 **[Verification-Gated Agents](https://github.com/cloudavenue0012-creator/verification-gated-agents)**
 검증 게이트를 쌓으면 신뢰도가 **0.55 → 0.97+**로 오르는 곡선을 측정 — 단 **정밀한 게이트만 개선되고 노이즈 게이트는 최적점 후 하락**(과잉 게이팅 역효과). 공유상태 단일커밋터 불변식.
 
+**[Self-Healing Automation](https://github.com/cloudavenue0012-creator/self-healing-automation)**
+무인 자동화를 스스로 고치는 감독자 — 실패 감지 → **경계 안 복구행동 선택** → **exit 코드가 아닌 실제 결과 검증** → 못 고치면 사람에게 에스컬레이션. 검증을 끄면 **7%가 "복구됨"으로 보고되지만 실제론 고장**(exit-0 거짓말). RPA는 껍데기, 감독자가 본체.
+
 **[Utility-Bill Extraction + Reconciliation Eval](https://github.com/cloudavenue0012-creator/utility-bill-extraction-eval)**
 고지서 문서추출 → 대사의 **2층 eval**. *"추출 품질이 대사 F1의 천장"* 을 sweep으로 증명하고, denoise 가설을 **McNemar로 검정 → 기각**. 현실이 반박한 기록.
 
 ---
-<sub>결과를 주장이 아니라 <b>측정된 수치</b>로 보여줍니다 — 두 repo 모두 eval·CI로 검증됩니다.</sub>
+<sub>결과를 주장이 아니라 <b>측정된 수치</b>로 보여줍니다 — 다섯 repo 모두 eval·CI로 검증됩니다.</sub>
