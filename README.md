@@ -15,7 +15,7 @@ LLM 멀티에이전트 오케스트레이션 · 검증 게이트 설계 · 이�
 영업이익 증감을 **물량·믹스·가격·원가·환율·판관비로 정확 분해**하는 FP&A 브리지. `OP0 + 6요인 = OP1` 검증항등식(잔차 0) + 심은 드라이버 **복원율 1.0** eval + 워터폴. 경영관리의 첫 질문 "왜 이익이 움직였나"에 답하는 도구.
 
 **[Settlement Reconciliation & Verification Engine](https://github.com/cloudavenue0012-creator/settlement-reconciliation-engine)**
-다채널 매출 정산을 규칙엔진으로 **독립 재계산 → 대조**하는 검증 게이트. 이상탐지 **F1 0.956 · recall 100%**, eval·튜닝곡선·**CI 게이트**·Streamlit. 리깅됐던 벤치마크를 스스로 발견·수정한 기록까지.
+다채널 매출 정산을 규칙엔진으로 **독립 재계산 → 대조**하는 검증 게이트. 이상탐지 **F1 0.956 · recall 100%**, eval·튜닝곡선·**CI 게이트**·Streamlit. 리깅됐던 벤치마크를 스스로 발견·수정하고, 그 판별 로직은 **한 줄 실행으로 재현되는 스크립트**로 남겼습니다.
 
 **[Verification-Gated Agents](https://github.com/cloudavenue0012-creator/verification-gated-agents)**
 검증 게이트를 쌓으면 신뢰도가 **0.55 → 0.97+**로 오르는 곡선을 측정 — 단 **정밀한 게이트만 개선되고 노이즈 게이트는 최적점 후 하락**(과잉 게이팅 역효과). 공유상태 단일커밋터 불변식.
