@@ -3,7 +3,7 @@
 **재무 현업 문제를 직접 AI 시스템으로 만들고, 매일 운영하며, 검증 게이트로 결과를 책임집니다.**
 <br><sub>Finance professional (8 yrs) who builds, runs and verifies AI systems for real finance operations — measured, not claimed.</sub>
 
-외식 프랜차이즈 본사 재무 8년차 · 사내 Finance팀 공식 AI 챔피언 · 📫 **aver0012@gmail.com** — AX·재무 AI·FP&A 자동화 포지션 이야기 환영합니다
+외식 프랜차이즈 본사 재무 8년차 · 사내 Finance팀 공식 AI 챔피언 · 📫 **aver0012@gmail.com** — 재무 × AI 실무 이야기·협업 환영합니다
 
 | 무인 배치 | 거짓 «효과 있음» 판정 | «성공처럼 보이는 실패» 탐지 |
 |:---:|:---:|:---:|
