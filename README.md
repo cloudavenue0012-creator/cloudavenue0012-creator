@@ -3,14 +3,14 @@
 **재무 현업 문제를 직접 AI 시스템으로 만들고, 매일 운영하며, 검증 게이트로 결과를 책임집니다.**
 <br><sub>Finance professional (8 yrs) who builds, runs and verifies AI systems for real finance operations — measured, not claimed.</sub>
 
-외식 프랜차이즈 본사 재무 8년차 · 사내 Finance팀 공식 AI 챔피언 · 📫 **aver0012@gmail.com** — 재무 × AI 실무 이야기·협업 환영합니다
+외식 프랜차이즈 본사 재무 8년차 · 사내 Finance팀 공식 AI 챔피언 · 📫 **cloudavenue0012@gmail.com** — 재무 × AI 실무 이야기·협업 환영합니다
 
 | 무인 배치 | 거짓 «효과 있음» 판정 | «성공처럼 보이는 실패» 탐지 |
 |:---:|:---:|:---:|
 | **약 60개** 매일 운영 | **56.3% → 0.4%** | **exit 코드 0% → 산출물 검증 100%** |
 | 에이전트 세션 10개 분업 | [Decision Impact Eval](https://github.com/cloudavenue0012-creator/decision-impact-eval) | [Self-Healing Automation](https://github.com/cloudavenue0012-creator/self-healing-automation) |
 
-> **원칙 —** AI 산출물도 검증 없이는 쓰지 않습니다. 신뢰는 "틀리지 않는다"가 아니라 **"틀리면 걸러진다"**에서 나옵니다.
+> **원칙 —** AI 산출물도 검증 없이는 쓰지 않습니다. 신뢰는 "틀리지 않는다"가 아니라 <b>"틀리면 걸러진다"</b>에서 나옵니다.
 
 ---
 
