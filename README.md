@@ -1,10 +1,32 @@
 # Ethan · Finance × AI (AX)
 
 **재무 현업 문제를 직접 AI 시스템으로 만들고, 매일 운영하며, 검증 게이트로 결과를 책임집니다.**
+<br><sub>Finance professional (8 yrs) who builds, runs and verifies AI systems for real finance operations — measured, not claimed.</sub>
 
-외식 프랜차이즈 본사 재무 8년차 · 사내 Finance팀 공식 AI 챔피언
+외식 프랜차이즈 본사 재무 8년차 · 사내 Finance팀 공식 AI 챔피언 · 📫 **aver0012@gmail.com** — AX·재무 AI·FP&A 자동화 포지션 이야기 환영합니다
+
+| 무인 배치 | 거짓 «효과 있음» 판정 | «성공처럼 보이는 실패» 탐지 |
+|:---:|:---:|:---:|
+| **약 60개** 매일 운영 | **56.3% → 0.4%** | **exit 코드 0% → 산출물 검증 100%** |
+| 에이전트 세션 10개 분업 | [Decision Impact Eval](https://github.com/cloudavenue0012-creator/decision-impact-eval) | [Self-Healing Automation](https://github.com/cloudavenue0012-creator/self-healing-automation) |
 
 > **원칙 —** AI 산출물도 검증 없이는 쓰지 않습니다. 신뢰는 "틀리지 않는다"가 아니라 **"틀리면 걸러진다"**에서 나옵니다.
+
+---
+
+### 어떻게 돌아가나
+
+```mermaid
+flowchart LR
+  S[원천 DB · 포털 · 메일 · 문서] --> B[무인 배치 약 60개]
+  B --> G{검증 게이트<br/>건수 · 신선도 · 대사 · 불변식}
+  G -- 통과 --> R[대시보드 · 보고 메일 · 메신저]
+  G -- 실패 --> H[자가 복구 감독]
+  H -- 재실행 --> B
+  H -- 못 고침 --> P[사람에게 에스컬레이션]
+  A[AI 에이전트 세션 10개<br/>도메인별 분업 · 단일 커미터] -. 만들고 고침 .-> B
+  V[검증 담당<br/>만든 쪽이 스스로 완료 판정하지 않음] -. 채점 .-> G
+```
 
 ---
 
@@ -32,6 +54,13 @@
 | [Verification-Gated Agents](https://github.com/cloudavenue0012-creator/verification-gated-agents) | 검증 게이트가 에이전트 신뢰도에 주는 효과 | 0.55 → 0.97+ · 노이즈 게이트는 최적점 이후 오히려 하락(과잉 게이팅) |
 | [Self-Healing Automation](https://github.com/cloudavenue0012-creator/self-healing-automation) | 무인 자동화의 감지 → 복구 → 결과 검증, exit 0 으로 끝나는 «성공처럼 보이는 실패» 7유형(실제 사고 일반화) | 결과 검증을 끄면 7%가 거짓 «복구됨» · 7유형 탐지율 exit 코드만 0% / 파일 존재 1.5% / 산출물 검증 100%(오경보 0.65%) |
 | [Utility-Bill Extraction Eval](https://github.com/cloudavenue0012-creator/utility-bill-extraction-eval) | 문서 추출 → 금액 대사 2층 eval | 추출 품질이 대사 F1의 상한임을 sweep으로 확인 · denoise 가설은 McNemar 검정으로 기각 |
+
+---
+
+### 틀렸던 기록 — 스스로 찾아 고친 것
+- **내 벤치마크가 리깅돼 있었다.** 정산 엔진 첫 공개판은 합성 잡음이 평가 기준(허용오차)을 따라 움직여, 튜닝 곡선이 아무것도 재지 못하고 있었습니다. 직접 찾아 고치고, 그 판별 과정을 [한 줄로 재현되는 스크립트](https://github.com/cloudavenue0012-creator/settlement-reconciliation-engine)로 남겼습니다.
+- **+1645%, p=0.0001 이 효과가 아니었다.** 할인 효과로 보이던 수치가 채널 런칭 곡선이었고, 순열검정·요일 균형 두 게이트는 그걸 통과시켰습니다 → 시간 교락 게이트를 새로 세웠습니다([Decision Impact Eval](https://github.com/cloudavenue0012-creator/decision-impact-eval)).
+- **내가 세운 통과 기준이 데이터에서 성립하지 않았다.** 「사후에 고른 최고 엔진보다 항상 낫다」를 포기하고 후회 상한으로 바꾼 이유를 README에 그대로 적었습니다([Forecast Tournament](https://github.com/cloudavenue0012-creator/forecast-tournament)).
 
 ---
 
